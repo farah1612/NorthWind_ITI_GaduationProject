@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Nortwind_Traders_ETL", "Nortwind_Traders_ETL\Nortwind_Traders_ETL.dtproj", "{92B0E881-8909-4F1C-A352-3A63D2F83DFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B0E881-8909-4F1C-A352-3A63D2F83DFB}.Development|Default.ActiveCfg = Development
+		{92B0E881-8909-4F1C-A352-3A63D2F83DFB}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4F265D2-1E74-4B2E-9BD7-1A1AE7420455}
+	EndGlobalSection
+EndGlobal
