@@ -1,0 +1,145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="03ac32b0-4556-4e60-9bb6-8c0d26c27b89" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>North Wind DWH_DV1</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT Orders</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="de85c95c-4a53-4f05-ab27-4d5db0415946">
+          <ID>FACT Orders</ID>
+          <Name>FACT Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a28b2cc5-f2de-47d5-9819-beb94420edd8">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_FACT_x007C_Orders</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="98d7e3b4-6ed5-47cb-a93d-4f0b68d722f9">
+          <ID>DIM Customer</ID>
+          <Name>DIM Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="534474bc-3f05-4910-89e6-be512b138e2f">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_DIM_x007C_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Employee</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="96bc2b78-7f0e-44a1-b928-1f17daf3ff99">
+          <ID>DIM Employee</ID>
+          <Name>DIM Employee</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="41cabb20-ace9-41db-927f-a4c5c758790f">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_DIM_x007C_Employee</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="588336b5-f025-473e-af50-5d0749a71368">
+          <ID>DIM Product</ID>
+          <Name>DIM Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6cda5379-4aa9-4c54-be46-ad41cd013b4e">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_DIM_x007C_Product</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Product 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9ed8637d-e52e-4090-8393-892b19bf88b5">
+          <ID>DIM Product</ID>
+          <Name>DIM Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50ae59b0-e4b8-4d34-971b-3a64421cffed">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_DIM_x007C_Product</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Shipper</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d2a2aea8-7db3-47d7-b87b-1707e170b55e">
+          <ID>DIM Shipper</ID>
+          <Name>DIM Shipper</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="285db8c7-e418-426b-912e-ef019f40b900">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_DIM_x007C_Shipper</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT Orders 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1db6e28c-4787-4aa1-91f9-bd28e3a26f3e">
+          <ID>FACT Orders</ID>
+          <Name>FACT Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a7f12c6f-0075-40ff-8847-ef9215b15d56">
+            <DataSourceViewID>North Wind DWH_DV1</DataSourceViewID>
+            <TableID>dbo_FACT_x007C_Orders</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
