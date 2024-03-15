@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('DIM Product'[Category Name], 'DIM Product'[Category Id BK], 'DIM Product'[Product SK])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Product</DimensionName>
+                    <HierarchyName>Category Name</HierarchyName>
+                    <HierarchyUniqueName>[DIM Product].[Category Name]</HierarchyUniqueName>
+                    <LevelName>Category Name</LevelName>
+                    <UniqueName>[DIM Product].[Category Name].[Category Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Product</DimensionName>
+                    <HierarchyName>Category Id BK</HierarchyName>
+                    <HierarchyUniqueName>[DIM Product].[Category Id BK]</HierarchyUniqueName>
+                    <LevelName>Category Id BK</LevelName>
+                    <UniqueName>[DIM Product].[Category Id BK].[Category Id BK]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category Id BK</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>DIM Product</DimensionName>
+                    <HierarchyName>Product SK</HierarchyName>
+                    <HierarchyUniqueName>[DIM Product].[Product SK]</HierarchyUniqueName>
+                    <LevelName>Product SK</LevelName>
+                    <UniqueName>[DIM Product].[Product SK].[Product SK]</UniqueName>
+                  </ID>
+                  <ItemCaption>Product SK</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>North Wind DWH_DV1</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('DIM Product'[Category Name], 'DIM Product'[Category Id BK], 'DIM Product'[Product SK])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Category_Name">
+        <DataField>DIM Product[Category Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category_Id_BK">
+        <DataField>DIM Product[Category Id BK]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Product_SK">
+        <DataField>DIM Product[Product SK]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
