@@ -1,4 +1,4 @@
-## Northwind Database Documentation
+## Northwind Traders Documentation
 
 
 **Overview on the Database:**
